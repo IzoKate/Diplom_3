@@ -12,9 +12,9 @@ class BaseFunctionLocators:
     #Кнопка Лента заказов
     BUTTON_ORDERS_FEED = (By.XPATH, ".//p[text()='Лента Заказов']")
     #Первый ингредиент
-    INGREDIENT1 = (By.XPATH, ".//div/ul[1]/a[1]")
+    INGREDIENT1 = (By.XPATH, './/ul[1][contains(@class,"Ingredients")]/a[1]')
     #Счетчик первого ингредиента
-    INGREDIENT1_COUNT = (By.XPATH, ".//div/ul[1]/a[1]/div/p[contains(@class, 'count')]")
+    INGREDIENT1_COUNT = (By.XPATH, './/ul[1][contains(@class,"Ingredients")]/a[1]//p[contains(@class,"counter")]')
     #Детали ингредиента
     DETAIL_INGREDIENT = (By.XPATH, ".//div/h2[text() = 'Детали ингредиента']")
     #Открытое окно ингредиента
